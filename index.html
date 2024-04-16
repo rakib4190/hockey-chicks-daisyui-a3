@@ -11,8 +11,27 @@
     <!-- tailwind and daisyUI cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "section-title-color": "#131318",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- custom css -->
+    <style>
+      .manrope {
+        font-family: "Manrope";
+      }
+    </style>
   </head>
-  <body>
+  <body class="manrope">
     <!-- header start Here -->
     <header></header>
     <!-- main section start here -->
@@ -35,14 +54,76 @@
         </div>
       </div>
       <hr class="border-2 border-dashed border-gray-200" />
-      <div class="text-center my-8">
-        <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
-        <p class="text-base font-medium">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit repudiandae <br />
-          voluptatibus repellat nulla qui nam!
-        </p>
-      </div>
-      <hr class="border-2 border-dashed border-gray-200" />
+      <section>
+        <div class="text-center my-8">
+          <h2 class="text-4xl font-extrabold text-section-title-color">Professional Hockeys Club</h2>
+          <p class="text-base font-medium">
+            We play top-quality hockey with a friendly and enjoyable after-match atmosphere. <br />
+            We are welcoming of any prospective players and urge you to come along to a training session or to get in
+            contact with us!
+          </p>
+        </div>
+        <hr class="border-2 border-dashed border-gray-200" />
+        <div class="my-12 mx-5 lg:flex justify-around">
+          <!-- frist progress -->
+          <div class="text-center my-5 lg:my-0">
+            <div
+              class="radial-progress text-2xl font-bold text-red-500"
+              style="--value: 87; --size: 8rem"
+              role="progressbar"
+            >
+              <p class="text-section-title-color">87%</p>
+            </div>
+            <div class="">
+              <h2 class="text-xl font-semibold mt-6">Prayer Facility</h2>
+              <p class="mt-2">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+          <!-- second progress -->
+          <div class="text-center my-5 lg:my-0">
+            <div
+              class="radial-progress text-2xl font-bold text-green-400"
+              style="--value: 93; --size: 8rem"
+              role="progressbar"
+            >
+              <p class="text-section-title-color">95%</p>
+            </div>
+            <div class="">
+              <h2 class="text-xl font-semibold mt-6">Experienced Coach</h2>
+              <p class="mt-2">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+          <!-- third progress -->
+          <div class="text-center my-5 lg:my-0">
+            <div
+              class="radial-progress text-2xl font-bold text-yellow-400"
+              style="--value: 90; --size: 8rem"
+              role="progressbar"
+            >
+              <p class="text-section-title-color">90%</p>
+            </div>
+            <div class="">
+              <h2 class="text-xl font-semibold mt-6">Senior Player</h2>
+              <p class="mt-2">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+          <!-- fourth progress -->
+          <div class="text-center">
+            <div
+              class="radial-progress text-2xl font-bold text-blue-500"
+              style="--value: 80; --size: 8rem"
+              role="progressbar"
+            >
+              <p class="text-section-title-color">80%</p>
+            </div>
+            <div class="">
+              <h2 class="text-xl font-semibold mt-6">Training Ground</h2>
+              <p class="mt-2">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 border-dashed border-gray-200 mt-24" />
+      </section>
     </main>
     <!-- footer start here -->
     <footer></footer>
